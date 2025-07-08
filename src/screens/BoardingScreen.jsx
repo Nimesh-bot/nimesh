@@ -58,6 +58,9 @@ const BoardingScreen = ({ click }) => {
         Currently hosted on free Render server. Please allow few minutes for the
         server to wake up.
       </Note>
+      <Note>
+        **I sincerly apologize for some features are broken and maintenance haven't been done since deployment**
+      </Note>
     </Container>
   );
 };
