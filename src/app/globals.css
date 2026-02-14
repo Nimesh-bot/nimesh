@@ -1,0 +1,126 @@
+@import "tailwindcss";
+
+:root {
+  /* ==============================
+     Semantic Color Tokens
+     ============================== */
+
+  /* Backgrounds (dark-first) */
+  --bg: #080808;
+  /* near-black base */
+  --surface: #0f172a;
+  /* dark navy panel  */
+  --surface-high: #1e1b4b;
+  /* elevated purple-navy */
+  --card: #111827;
+  /* gray-900 card */
+  --card-mid: #1f2937;
+  /* gray-800 mid surface */
+
+  /* Primary accent — cyan */
+  --primary: #22d3ee;
+  --primary-dim: #0e7490;
+
+  /* Secondary accent — purple */
+  --secondary: #8b5cf6;
+  --secondary-dim: #7c3aed;
+
+  /* Status */
+  --success: #4ade80;
+  --danger: #ef4444;
+  --warning: #eab308;
+
+  /* Text */
+  --body: #d1d5db;
+  /* gray-300 — main content text */
+  --muted: #9ca3af;
+  /* gray-400 — secondary labels  */
+  --subtle: #6b7280;
+  /* gray-500 — comments / hints  */
+
+  /* Border */
+  --border: #374151;
+  /* gray-700 */
+
+  /* ==============================
+     Effect Tokens
+     (used in inline styles, not Tailwind classes)
+     ============================== */
+
+  /* Glows */
+  --primary-glow: rgba(0, 255, 255, 0.30);
+  --primary-glow-sm: rgba(0, 255, 255, 0.15);
+  --primary-glow-strong: rgba(0, 255, 255, 0.80);
+  --primary-border: rgba(0, 255, 255, 0.70);
+
+  /* Glass surfaces */
+  --glass-dark: rgba(15, 15, 30, 0.92);
+  --glass-sm: rgba(255, 255, 255, 0.08);
+  --glass-md: rgba(255, 255, 255, 0.10);
+  --glass-light: rgba(255, 255, 255, 0.25);
+  --glass-heavy: rgba(255, 255, 255, 0.35);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-border-hi: rgba(255, 255, 255, 0.15);
+
+  /* Gradients */
+  --gradient-boot: linear-gradient(135deg, #111827, #1f2937, #000000);
+  --gradient-bg: linear-gradient(160deg, #0f172a 0%, #1e1b4b 50%, #0c0a1e 100%);
+  --gradient-desktop: linear-gradient(135deg, #1e3a8a, #4c1d95, #312e81);
+  --gradient-titlebar: linear-gradient(90deg, #2563eb, #7c3aed);
+  --gradient-cta: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  --gradient-logo: linear-gradient(135deg, #1e3a5f, #0e7490);
+  --gradient-subtitle: linear-gradient(180deg, rgba(242, 242, 242, 0) 0%, rgba(0, 0, 0, 1) 55%);
+
+  /* Radial overlays */
+  --glow-radial: radial-gradient(circle at center, transparent 0%, rgba(0, 255, 255, 0.05) 100%);
+  --desktop-radial: radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.3), transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(99, 102, 241, 0.2), transparent 50%);
+
+  /* Scanlines (pre-baked at final opacity, no wrapper div needed) */
+  --scanline: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 255, 255, 0.08) 2px, rgba(0, 255, 255, 0.08) 4px);
+  --scanline-white: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255, 255, 255, 0.015) 2px, rgba(255, 255, 255, 0.015) 4px);
+
+  /* Shadows */
+  --shadow-window: 0 10px 40px rgba(0, 0, 0, 0.5);
+  --shadow-screen: 0 0 100px rgba(0, 255, 255, 0.3), inset 0 0 50px rgba(0, 0, 0, 0.8);
+  --shadow-glow: 0 0 20px rgba(0, 255, 255, 0.35);
+  --shadow-logo: 0 0 30px rgba(0, 255, 255, 0.3);
+  --shadow-knob: 0 0 12px rgba(0, 255, 255, 0.4);
+  --shadow-icon: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+  /* Icons (SVG stroke / fill) */
+  --icon-color: rgba(255, 255, 255, 0.70);
+}
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: #ffffff;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-high: var(--surface-high);
+  --color-card: var(--card);
+  --color-card-mid: var(--card-mid);
+
+  --color-primary: var(--primary);
+  --color-primary-dim: var(--primary-dim);
+  --color-secondary: var(--secondary);
+  --color-secondary-dim: var(--secondary-dim);
+
+  --color-success: var(--success);
+  --color-danger: var(--danger);
+  --color-warning: var(--warning);
+
+  --color-body: var(--body);
+  --color-muted: var(--muted);
+  --color-subtle: var(--subtle);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--bg);
+  color: var(--body);
+  font-family: Arial, Helvetica, sans-serif;
+}
