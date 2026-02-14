@@ -15,6 +15,6 @@ export const icons = {
     node: "/icons/node.webp",
     docker: "/icons/docker.webp",
     github: "/icons/github.webp",
-    linkedin: "/icons/linkedin.webp",
+    linkedin: "/icons/linkedIn.webp",
     shutdown: "/icons/power.webp",
 }
